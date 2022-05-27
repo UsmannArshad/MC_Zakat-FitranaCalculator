@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/zakat"
     tools:context=".WheatActivity">
 
     <EditText
@@ -12,32 +11,34 @@
         android:layout_width="333dp"
         android:layout_height="59dp"
         android:layout_marginStart="45dp"
+        android:layout_marginTop="156dp"
         android:layout_marginEnd="33dp"
-        android:layout_marginBottom="21dp"
         android:ems="10"
         android:hint="Enter 1kg price of Wheat e.g 80"
         android:inputType="textPersonName"
         android:textColor="@color/design_default_color_error"
         android:textColorHint="@color/design_default_color_error"
-        app:layout_constraintBottom_toTopOf="@+id/members"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/members"
+        android:id="@+id/kishmishmember"
         android:layout_width="331dp"
         android:layout_height="58dp"
         android:layout_marginStart="45dp"
+        android:layout_marginTop="21dp"
         android:layout_marginEnd="35dp"
-        android:layout_marginBottom="47dp"
         android:ems="10"
         android:hint="No of Family Members e.g 4"
         android:inputType="textPersonName"
         android:textColor="@color/design_default_color_error"
         android:textColorHint="@color/design_default_color_error"
-        app:layout_constraintBottom_toTopOf="@+id/wheatcalculate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
 
     <Button
         android:id="@+id/wheatcalculate"
@@ -45,21 +46,23 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="160dp"
         android:layout_marginEnd="160dp"
-        android:layout_marginBottom="43dp"
+        android:layout_marginBottom="328dp"
         android:text="Calculate"
-        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="91dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="184dp"
+        android:id="@+id/textView1"
+        android:layout_width="268dp"
+        android:layout_height="106dp"
+        android:layout_marginBottom="160dp"
+        android:foregroundGravity="center"
+        android:gravity="center"
         android:textColor="@color/design_default_color_error"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

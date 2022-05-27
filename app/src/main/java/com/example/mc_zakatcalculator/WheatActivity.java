@@ -19,8 +19,8 @@ public class WheatActivity extends AppCompatActivity {
         setContentView(R.layout.activity_wheat);
         submitbtn=findViewById(R.id.wheatcalculate);
         prices=findViewById(R.id.price);
-        member=findViewById(R.id.members);
-        textView=findViewById(R.id.textView);
+        member=findViewById(R.id.kishmishmember);
+        textView=findViewById(R.id.textView1);
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
