@@ -26,7 +26,8 @@ public class KishmishActivity extends AppCompatActivity {
                 float pricee=Float.parseFloat(prices.getText().toString());
                 int members=Integer.parseInt(member.getText().toString());
                 float val=pricee*4*members;
-                textView.setText(Float.toString(val));
+                int val1=(int)val;
+                textView.setText(Integer.toString(val1));
             }
         });
     }

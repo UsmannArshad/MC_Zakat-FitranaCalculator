@@ -27,7 +27,8 @@ public class WheatActivity extends AppCompatActivity {
                 float pricee=Float.parseFloat(prices.getText().toString());
                 int members=Integer.parseInt(member.getText().toString());
                 float val=pricee*2*members;
-                textView.setText(Float.toString(val));
+                int value1=(int)val;
+                textView.setText(Integer.toString(value1));
             }
         });
     }
