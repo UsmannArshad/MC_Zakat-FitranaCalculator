@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MC_ZakatCalculator">
         <activity
+            android:name=".ZakatWithSilver"
+            android:exported="false" />
+        <activity
+            android:name=".ZakatWithGoldActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZakatWithCashActivity"
+            android:exported="false" />
+        <activity
             android:name=".WheatActivity"
             android:exported="false" />
         <activity
